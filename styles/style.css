@@ -1,0 +1,123 @@
+@import url('reset.css');
+@import url('theme.css');
+
+/* Custom Styles */
+
+body {
+  background-color: var(--clr-primary-300);
+  font-family: var(--ff-primary);
+  padding: 25px 20px 25px 20px;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  border-radius: 1rem;
+  background-color: var(--clr-neutral-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  max-width: 570px;
+}
+
+.card>* {
+  flex: 1;
+}
+
+.card-body {
+  padding: 30px;
+  max-width: 275px;
+}
+
+.card-body>*+* {
+  padding-bottom: 20px;
+}
+
+.card-secondary-heading {
+  letter-spacing: 0.3rem;
+  font-size: var(--fs-300);
+  text-transform: uppercase;
+  color: var(--clr-neutral-200);
+  padding-bottom: 10px;
+}
+
+.card-primary-heading {
+  font-family: var(--ff-secondary);
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-600);
+  line-height: 2rem;
+}
+
+.card-text {
+  color: var(--clr-neutral-200);
+  font-size: var(--fs-400);
+}
+
+.pricing {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.price {
+  color: var(--clr-primary-400);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--clr-neutral-200);
+  font-size: var(--fs-400);
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  padding: 0.8rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(158, 37%, 25%);
+}
+
+.attribution {
+  font-size: 11px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .card-body {
+    padding: 25px;
+    max-width: 100%;
+  }
+}
