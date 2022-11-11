@@ -1,23 +1,23 @@
-@import url('reset.css');
-@import url('theme.css');
+@import url("reset.css");
+@import url("theme.css");
 
 /* Custom Styles */
 
 body {
+  display: grid;
+  padding: 25px 20px;
   background-color: var(--clr-primary-300);
   font-family: var(--ff-primary);
-  padding: 25px 20px 25px 20px;
-  display: grid;
   place-content: center;
 }
 
 .card {
-  border-radius: 1rem;
-  background-color: var(--clr-neutral-100);
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   max-width: 570px;
+  border-radius: 1rem;
+  background-color: var(--clr-neutral-100);
+  overflow: hidden;
 }
 
 .card>* {
@@ -25,8 +25,8 @@ body {
 }
 
 .card-body {
-  padding: 30px;
   max-width: 275px;
+  padding: 30px;
 }
 
 .card-body>*+* {
@@ -34,18 +34,18 @@ body {
 }
 
 .card-secondary-heading {
-  letter-spacing: 0.3rem;
-  font-size: var(--fs-300);
-  text-transform: uppercase;
-  color: var(--clr-neutral-200);
   padding-bottom: 10px;
+  color: var(--clr-neutral-200);
+  font-size: var(--fs-300);
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
 .card-primary-heading {
-  font-family: var(--ff-secondary);
   color: var(--clr-neutral-900);
-  font-weight: var(--fw-bold);
+  font-family: var(--ff-secondary);
   font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
   line-height: 2rem;
 }
 
@@ -70,9 +70,9 @@ body {
 }
 
 .old-price {
-  text-decoration: line-through;
   color: var(--clr-neutral-200);
   font-size: var(--fs-400);
+  text-decoration: line-through;
 }
 
 .btn {
@@ -81,8 +81,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.85rem;
-  padding: 0.8rem;
   width: 100%;
+  padding: 0.8rem;
   border: none;
   border-radius: 0.5rem;
   background-color: var(--clr-primary-400);
@@ -93,20 +93,20 @@ body {
 }
 
 .btn:hover {
-  background-color: hsl(158, 37%, 25%);
+  background-color: hsl(158deg 37% 25%);
 }
 
 .attribution {
-  font-size: 11px;
   position: fixed;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
+  font-size: 0.6875rem;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228deg 45% 44%);
 }
 
 @media screen and (max-width: 650px) {
@@ -117,7 +117,7 @@ body {
   }
 
   .card-body {
-    padding: 25px;
     max-width: 100%;
+    padding: 25px;
   }
 }
